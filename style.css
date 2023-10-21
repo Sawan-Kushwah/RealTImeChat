@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(221, 199, 199), rgba(17, 17, 227, 0.99));
+    height: 100vh;
+}
+
+.navbar img {
+    width: 110px;
+    margin: auto;
+    display: block;
+}
+
+.navbar h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container {
+    width: 70%;
+    height: 500px;
+    border: 2.7px solid black;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgb(28, 1, 1);
+    overflow-y: auto;
+}
+
+.message {
+    border: 2px solid black;
+    max-width: 100%;
+    width: 320px;
+    margin: 16px 10px;
+    padding: 8px;
+    border-radius: 15px;
+    overflow-wrap: break-word;
+}
+
+.right {
+    float: right;
+    clear: both;
+    background-image: linear-gradient(to right, rgb(193, 187, 187), rgba(0, 51, 255, 0.759));
+    border-bottom-right-radius: 7px;
+
+}
+
+.left {
+    float: left;
+    clear: both;
+    background-image: linear-gradient(to right, gray, rgb(223, 217, 217));
+    border-bottom-left-radius: 7px;
+
+}
+
+.send {
+    text-align: center;
+}
+
+#messageInp {
+    width: 59%;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background: #737272;
+    transition: all 0.2s ease-in;
+
+}
+
+#messageInp:hover {
+    background-color: rgba(255, 255, 255, 0.864);
+    color: black;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 4px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 122px;
+    height: 37px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #535151;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.864);
+    color: #535151;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .btn {
+        display: block;
+        margin: 7px auto;
+    }
+}
+
+@media screen and (max-width:930px) {
+
+    .container {
+        width: 88%;
+    }
+
+    #messageInp {
+        width: 88%;
+     }
+}
+
+
+
+@media screen and (max-width:550px) {
+
+    .container {
+        width: 100%;
+        border-top: 3px solid black;
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid black;
+        box-shadow: none;
+        border-radius: none;
+    }
+
+    .message {
+        width: 230px;
+        margin: 5px 11px;
+        font-size: 0.7rem;
+    }
+}
